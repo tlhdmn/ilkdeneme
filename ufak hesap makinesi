@@ -1,0 +1,80 @@
+void menu()
+int max(int,int);
+int min(int,int);
+int kare(int);
+int kup(int);
+int mutlak(int);
+
+int main(){
+int secim=0,x,y;
+menu();
+printf("Yapmak istediginiz islemi seciniz");
+scanf("%d",&secim);
+printf("\n");
+switch(secim){
+case 1:
+ printf("2 Sayi giriniz");
+ scanf("%d%d",&x,&y);
+printf("Maximum deger:%d",max(x,y));
+break;
+case 2:
+printf("2 sayi giriniz");
+scanf("%d%d",&x,&y);
+printf("Minimum deger:%d"min(x,y));
+break;
+case 3:
+ printf("Sayinizi giriniz");
+ scanf("%d",&x);
+printf("Sayinin karesi:%d",kare(x);
+break;
+case 4:
+printf("Sayinizi girin");
+scanf("%d",&x);
+printf("Sayinin kupu:%d",kup(x);
+break;
+case 5:
+printf("Sayinizi giriniz");
+scanf("%d",&x);
+printf("Sayinin mutlak degeri:%d",mutlak(x);
+break;
+default:
+printf("1-5 arasinda sayi seciniz");}
+
+return 0;}
+
+
+
+void menu(){
+printf("\n");
+printf("**********\n");
+printf("*  MENU  *\n");
+printf("**********\n");
+printf("1-maximum\n");
+printf("2-minimum\n");
+printf("3-kare\n");
+printf("4-kup\n");
+printf("5-mutlak\n");
+}
+int min(int x,int y){
+if(x<y){
+return x;}
+else return y;
+}
+int max(int x,int y){
+if(x>y) return x;
+else return y;
+}
+int kare(int x){
+return x*x;
+}
+int kup(int x){
+return x*x*x;
+}
+int mutlak(int x){
+if(x<0){
+return (-1)*x;
+}
+else{
+return x;
+}
+}
