@@ -1,4 +1,4 @@
-void menu()
+void menu();
 int max(int,int);
 int min(int,int);
 int kare(int);
@@ -25,17 +25,17 @@ break;
 case 3:
  printf("Sayinizi giriniz");
  scanf("%d",&x);
-printf("Sayinin karesi:%d",kare(x);
+printf("Sayinin karesi:%d",kare(x)) ;
 break;
 case 4:
 printf("Sayinizi girin");
 scanf("%d",&x);
-printf("Sayinin kupu:%d",kup(x);
+printf("Sayinin kupu:%d",kup(x)) ;
 break;
 case 5:
 printf("Sayinizi giriniz");
 scanf("%d",&x);
-printf("Sayinin mutlak degeri:%d",mutlak(x);
+printf("Sayinin mutlak degeri:%d",mutlak(x)) ;
 break;
 default:
 printf("1-5 arasinda sayi seciniz");}
